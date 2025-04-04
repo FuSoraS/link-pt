@@ -1,0 +1,13 @@
+---
+const { link } = Astro.props;
+---
+
+<a
+    class="flex flex-wrap justify-center items-center 
+    w-60 bg-secondary border-2 border-primary rounded-md p-2 
+    transition duration-300 hover:scale-105"
+    href={link}
+    target="_blank"
+>
+    <slot />
+</a>

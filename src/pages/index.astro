@@ -1,11 +1,16 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import CardLink from '../components/CardLink.astro';
+import IconYoutube from '../components/icons/IconYoutube.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<section class="grid justify-center content-center h-screen gap-5">
+		<h1 class="text-2xl text-center font-bold">Recursos y Links</h1>
+		<CardLink link="https://youtube.com/playlist?list=PLPl81lqbj-4JiR1Cio6xEygCZDmZmDUWI">
+			<IconYoutube class="size-10 mr-3"/>
+			<p class="font-bold">Plalist de Firebase</p>
+			<p>Como hacer un login con Firebase</p>
+		</CardLink>
+	</section>
 </Layout>
