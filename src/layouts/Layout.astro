@@ -1,5 +1,6 @@
 ---
 import './src/styles/global.css'
+import { BASE_URL } from '../config';
 ---
 <!doctype html>
 <html lang="es">
@@ -7,7 +8,7 @@ import './src/styles/global.css'
 		<title>Links de referencia para el projecto de titulacion</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href=`${BASE_URL}/favicon.svg` />
 	</head>
 	<body>
 		<slot />
