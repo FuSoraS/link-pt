@@ -9,5 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://fusorass.github.io',
-  base: 'link-pr',
+  base: 'link-pt',
 });
