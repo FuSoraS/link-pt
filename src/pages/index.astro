@@ -1,22 +1,28 @@
 ---
 import CardLink from '../components/CardLink.astro';
+import IconBackground from '../components/icons/IconBackground.astro';
 import IconDeepseek from '../components/icons/IconDeepseek.astro';
 import IconYoutube from '../components/icons/IconYoutube.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<section class="grid justify-center content-center h-dvh gap-5">
+	<section class="grid justify-center content-center min-h-dvh gap-5">
 		<h1 class="text-2xl text-center font-bold">Recursos y Links</h1>
 		<CardLink link="https://youtube.com/playlist?list=PLPl81lqbj-4JiR1Cio6xEygCZDmZmDUWI">
-			<IconYoutube class="size-10 mr-3"/>
+			<IconYoutube class="size-width-icon mr-icon-card-left"/>
 			<p class="font-bold">Plalist de Firebase</p>
 			<p>Como hacer un login con Firebase</p>
 		</CardLink>
 		<CardLink link="https://uiverse.io/Spacious74/lazy-dragonfly-64">
-			<IconDeepseek class="size-10 mr-3"/>
+			<IconDeepseek class="size-width-icon mr-icon-card-left"/>
 			<p class="font-bold">Boton de IA</p>
 			<p>Codigo en HTML, CSS para el boton del ChatIA</p>
+		</CardLink>
+		<CardLink link="https://uiverse.io/Tiagoadag/cuddly-catfish-6">
+			<IconBackground class="size-width-icon mr-icon-card-left"/>
+			<p class="font-bold">Fondo con borde degradado</p>
+			<p>Fondo negro con degradado estilo neon</p>
 		</CardLink>
 	</section>
 </Layout>
