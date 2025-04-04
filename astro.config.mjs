@@ -8,6 +8,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://fusoras.github.io',
+  site: 'https://FuSoraS.github.io',
   base: 'link-pt',
 });
